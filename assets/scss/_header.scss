@@ -1,0 +1,121 @@
+header {
+    margin-bottom: 2rem;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    line-height: 0.75;
+    text-align: center;
+    color: $very-dark-magenta;
+    margin-bottom: 1.5rem;
+}
+
+header p {
+    color: $dark-grayish-magenta;
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.rating {
+    background-color: $light-grayish-magenta;
+    border-radius: 10px;
+    padding: .85rem 1rem;
+    margin: 1rem 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.rating p {
+    color: $very-dark-magenta;
+    margin-bottom: 0;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.stars img {
+    margin-right: 7px;
+}
+
+@media screen and (min-width: 375px) {
+    header .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-text,
+    .ratings {
+        flex: 1;
+    }
+
+    .header-text,
+    .ratings {
+        padding: 2rem 4rem;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        line-height: 0.75;
+        text-align: left;
+        color: $very-dark-magenta;
+        margin-bottom: 1.5rem;
+    }
+
+    header p {
+        color: $dark-grayish-magenta;
+        font-size: 1.125rem;
+        text-align: left;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+
+    .rating {
+        background-color: $light-grayish-magenta;
+        border-radius: 10px;
+        padding: 1rem;
+        display: flex;
+        margin: 1rem 0;
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rating:nth-child(1) {
+        transform: translateX(-6rem);
+    }
+
+    .rating:nth-child(2) {
+        transform: translateX(-3rem);
+    }
+
+    .rating:nth-child(3) {
+        transform: translateX(0);
+    }
+
+    .rating p {
+        color: $very-dark-magenta;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+
+    .stars {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-right: 1.5rem;
+    }
+
+    .stars img {
+        margin-right: 7px;
+    }
+}

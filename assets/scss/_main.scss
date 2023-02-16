@@ -1,0 +1,72 @@
+.card {
+    background-color: $very-dark-magenta;
+    color: $light-grayish-magenta;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+.card p {
+    line-height: 1.5;
+    font-size: 1.025rem;
+}
+
+.card-holder {
+    margin-top: .75rem;
+}
+
+.card-holder::after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 1.125rem;
+}
+
+.card-holder img {
+    float: left;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 2rem;
+}
+
+.card-holder h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.card-holder p {
+    color: $soft-pink;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+@media screen and (min-width:375px) {
+    main .container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card {
+        background-color: $very-dark-magenta;
+        color: $light-grayish-magenta;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        padding: 2rem;
+    }
+
+    .card:nth-child(2) {
+        transform: translateY(1rem);
+    }
+
+    .card:nth-child(3) {
+        transform: translateY(2rem);
+    }
+}
+
+footer {
+    margin-top: 3rem;
+}

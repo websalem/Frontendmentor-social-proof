@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Outfit:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
+  padding: 5rem 0;
+  background-image: url(../images/bg-pattern-top-mobile.svg), url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    font-size: 15px;
+    font-family: "League Spartan", sans-serif;
+    min-height: 100vh;
+    padding: 5rem 0;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+  }
+}
+header {
+  margin-bottom: 2rem;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  line-height: 0.75;
+  text-align: center;
+  color: hsl(300deg, 43%, 22%);
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  color: hsl(303deg, 10%, 53%);
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rating {
+  background-color: hsl(300deg, 24%, 96%);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  margin: 1rem 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.rating p {
+  color: hsl(300deg, 43%, 22%);
+  margin-bottom: 0;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stars img {
+  margin-right: 7px;
+}
+
+@media screen and (min-width: 375px) {
+  header .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-text,
+  .ratings {
+    flex: 1;
+  }
+  .header-text,
+  .ratings {
+    padding: 2rem 4rem;
+  }
+  header h1 {
+    font-size: 3.5rem;
+    line-height: 0.75;
+    text-align: left;
+    color: hsl(300deg, 43%, 22%);
+    margin-bottom: 1.5rem;
+  }
+  header p {
+    color: hsl(303deg, 10%, 53%);
+    font-size: 1.125rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  .rating {
+    background-color: hsl(300deg, 24%, 96%);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    margin: 1rem 0;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .rating:nth-child(1) {
+    transform: translateX(-6rem);
+  }
+  .rating:nth-child(2) {
+    transform: translateX(-3rem);
+  }
+  .rating:nth-child(3) {
+    transform: translateX(0);
+  }
+  .rating p {
+    color: hsl(300deg, 43%, 22%);
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  .stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+  .stars img {
+    margin-right: 7px;
+  }
+}
+.card {
+  background-color: hsl(300deg, 43%, 22%);
+  color: hsl(300deg, 24%, 96%);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+.card p {
+  line-height: 1.5;
+  font-size: 1.025rem;
+}
+
+.card-holder {
+  margin-top: 0.75rem;
+}
+
+.card-holder::after {
+  content: "";
+  display: block;
+  clear: both;
+  margin-bottom: 1.125rem;
+}
+
+.card-holder img {
+  float: left;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 2rem;
+}
+
+.card-holder h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.card-holder p {
+  color: hsl(333deg, 80%, 67%);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 375px) {
+  main .container {
+    display: flex;
+    gap: 1rem;
+  }
+  .card {
+    background-color: hsl(300deg, 43%, 22%);
+    color: hsl(300deg, 24%, 96%);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+  }
+  .card:nth-child(2) {
+    transform: translateY(1rem);
+  }
+  .card:nth-child(3) {
+    transform: translateY(2rem);
+  }
+}
+footer {
+  margin-top: 3rem;
+}
